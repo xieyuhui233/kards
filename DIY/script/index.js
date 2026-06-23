@@ -1,3 +1,8 @@
+
+
+
+
+```js
 const types =  ["步兵","坦克","炮兵","战斗机","轰炸机","指令","反制"];
 const factions =  ["germany","britain","japan","soviet","usa","france","italy","poland","finland","anzac","neutral","china"];
 const raritys =  ["普通","限定","特殊","精英","衍生"];
@@ -9,7 +14,7 @@ var cur_set = 0;
 var cur_faction = 0;
 
 //const CDN_URL = "";
-const CDN_URL = "https://jsd-proxy.ygxz.in/gh/ohminecraftlauncher/ohminecraftlauncher.github.io@master/DIY/";
+const CDN_URL = "./";
 
 const rarity = document.getElementById("rarity");
 const type = document.getElementById("type");
@@ -175,7 +180,6 @@ function onFactionClick()
 }
 
 b_text.addEventListener('keydown', function(e) {
-	// Ctrl+B 快捷键
 	if (e.ctrlKey && e.key === 'b') {
 		e.preventDefault();
 		document.execCommand('bold', false, null);
@@ -192,7 +196,6 @@ function onEditBClick()
 		TIFSBtn.style.display = "flex";
 		TDFSBtn.style.display = "flex";
 		EditButton.innerText = "隐藏编辑按钮";
-		
 	}
 	else
 	{
@@ -347,3 +350,5 @@ function dataURLtoBlob(dataurl) {
 	}
 	return new Blob([u8arr], {type:mime});
 }
+```
+
